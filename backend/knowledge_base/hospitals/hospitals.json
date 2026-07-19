@@ -1,0 +1,14 @@
+[
+  {
+    "hospital": "Apollo Hospital",
+    "cashless": true
+  },
+  {
+    "hospital": "Fortis Hospital",
+    "cashless": true
+  },
+  {
+    "hospital": "ABC Clinic",
+    "cashless": false
+  }
+]

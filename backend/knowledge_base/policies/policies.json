@@ -1,0 +1,20 @@
+[
+  {
+    "policy_number": "POL-45892",
+    "customer_name": "John Smith",
+    "coverage_amount": 100000,
+    "status": "Active"
+  },
+  {
+    "policy_number": "POL-78945",
+    "customer_name": "Alice",
+    "coverage_amount": 50000,
+    "status": "Expired"
+  },
+  {
+    "policy_number": "POL-123456",
+    "customer_name": "Vishnu V",
+    "coverage_amount": 150000,
+    "status": "Active"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "customer_id": "CUS001",
+    "name": "Rahul Sharma",
+    "policy_number": "POL-123456",
+    "aadhaar_last4": "5720",
+    "phone": "9876543210",
+    "email": "rahul.sharma@gmail.com",
+    "address": "Karur, Tamil Nadu",
+    "policy_type": "Comprehensive",
+    "coverage_amount": 150000,
+    "vehicle_number": "TN47AB1234",
+    "vehicle_model": "Hyundai i20"
+  },
+  {
+    "customer_id": "CUS002",
+    "name": "Priya Nair",
+    "policy_number": "POL-123457",
+    "aadhaar_last4": "8421",
+    "phone": "9840012345",
+    "email": "priya.nair@gmail.com",
+    "address": "Coimbatore, Tamil Nadu",
+    "policy_type": "Third Party",
+    "coverage_amount": 100000,
+    "vehicle_number": "TN38CD5678",
+    "vehicle_model": "Honda City"
+  },
+  {
+    "customer_id": "CUS003",
+    "name": "Arun Kumar",
+    "policy_number": "POL-123458",
+    "aadhaar_last4": "1945",
+    "phone": "9787654321",
+    "email": "arun.kumar@gmail.com",
+    "address": "Chennai, Tamil Nadu",
+    "policy_type": "Comprehensive",
+    "coverage_amount": 300000,
+    "vehicle_number": "TN09EF9876",
+    "vehicle_model": "Mahindra XUV700"
+  },
+  {
+    "customer_id": "CUS004",
+    "name": "Meena Lakshmi",
+    "policy_number": "POL-123459",
+    "aadhaar_last4": "6654",
+    "phone": "9952233445",
+    "email": "meena.lakshmi@gmail.com",
+    "address": "Madurai, Tamil Nadu",
+    "policy_type": "Zero Depreciation",
+    "coverage_amount": 500000,
+    "vehicle_number": "TN58GH1122",
+    "vehicle_model": "Toyota Innova Hycross"
+  },
+  {
+    "customer_id": "CUS005",
+    "name": "Karthik Raj",
+    "policy_number": "POL-123460",
+    "aadhaar_last4": "3378",
+    "phone": "9090909090",
+    "email": "karthik.raj@gmail.com",
+    "address": "Salem, Tamil Nadu",
+    "policy_type": "Comprehensive",
+    "coverage_amount": 250000,
+    "vehicle_number": "TN52JK3344",
+    "vehicle_model": "Tata Nexon"
+  }
+]

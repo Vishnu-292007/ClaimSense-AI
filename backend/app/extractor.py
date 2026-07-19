@@ -1,5 +1,7 @@
 from app.gemini import ask_gemini
 import json
+import re
+
 
 def extract_claim_details(text):
     prompt = f"""
@@ -32,8 +34,21 @@ Claim:
     response = response.replace("```json", "").replace("```", "").strip()
 
     try:
-        return json.loads(response)
-    except:
+        data = json.loads(response)
+
+        # -------- CLEAN CLAIM AMOUNT --------
+        amount = str(data.get("claim_amount", ""))
+
+        digits = re.sub(r"[^0-9]", "", amount)
+
+        if digits:
+            data["claim_amount"] = f"₹{int(digits):,}"
+        else:
+            data["claim_amount"] = None
+
+        return data
+
+    except Exception:
         return {
             "error": "Failed to parse Gemini response",
             "raw_response": response

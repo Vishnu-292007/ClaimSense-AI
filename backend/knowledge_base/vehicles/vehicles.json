@@ -1,0 +1,57 @@
+[
+  {
+    "vehicle_number": "TN47AB1234",
+    "owner": "Rahul Sharma",
+    "policy_number": "POL-123456",
+    "model": "Hyundai i20",
+    "manufacturer": "Hyundai",
+    "year": 2023,
+    "fuel_type": "Petrol",
+    "registration_valid": true,
+    "insurance_status": "Active"
+  },
+  {
+    "vehicle_number": "TN38CD5678",
+    "owner": "Priya Nair",
+    "policy_number": "POL-123457",
+    "model": "Honda City",
+    "manufacturer": "Honda",
+    "year": 2022,
+    "fuel_type": "Petrol",
+    "registration_valid": true,
+    "insurance_status": "Active"
+  },
+  {
+    "vehicle_number": "TN09EF9876",
+    "owner": "Arun Kumar",
+    "policy_number": "POL-123458",
+    "model": "Mahindra XUV700",
+    "manufacturer": "Mahindra",
+    "year": 2024,
+    "fuel_type": "Diesel",
+    "registration_valid": true,
+    "insurance_status": "Active"
+  },
+  {
+    "vehicle_number": "TN58GH1122",
+    "owner": "Meena Lakshmi",
+    "policy_number": "POL-123459",
+    "model": "Toyota Innova Hycross",
+    "manufacturer": "Toyota",
+    "year": 2023,
+    "fuel_type": "Hybrid",
+    "registration_valid": true,
+    "insurance_status": "Active"
+  },
+  {
+    "vehicle_number": "TN52JK3344",
+    "owner": "Karthik Raj",
+    "policy_number": "POL-123460",
+    "model": "Tata Nexon",
+    "manufacturer": "Tata",
+    "year": 2024,
+    "fuel_type": "EV",
+    "registration_valid": true,
+    "insurance_status": "Active"
+  }
+]

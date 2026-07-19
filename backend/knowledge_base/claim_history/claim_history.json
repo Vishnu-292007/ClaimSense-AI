@@ -1,0 +1,42 @@
+[
+  {
+    "claim_id": "CLM2025001",
+    "policy_number": "POL-123456",
+    "customer_name": "Rahul Sharma",
+    "claim_amount": 18000,
+    "incident_date": "2025-02-14",
+    "status": "Approved"
+  },
+  {
+    "claim_id": "CLM2025002",
+    "policy_number": "POL-123456",
+    "customer_name": "Rahul Sharma",
+    "claim_amount": 22000,
+    "incident_date": "2025-09-10",
+    "status": "Approved"
+  },
+  {
+    "claim_id": "CLM2025003",
+    "policy_number": "POL-123457",
+    "customer_name": "Priya Nair",
+    "claim_amount": 35000,
+    "incident_date": "2025-05-20",
+    "status": "Rejected"
+  },
+  {
+    "claim_id": "CLM2025004",
+    "policy_number": "POL-123458",
+    "customer_name": "Arun Kumar",
+    "claim_amount": 120000,
+    "incident_date": "2025-11-01",
+    "status": "Approved"
+  },
+  {
+    "claim_id": "CLM2025005",
+    "policy_number": "POL-123459",
+    "customer_name": "Meena Lakshmi",
+    "claim_amount": 45000,
+    "incident_date": "2025-07-18",
+    "status": "Approved"
+  }
+]

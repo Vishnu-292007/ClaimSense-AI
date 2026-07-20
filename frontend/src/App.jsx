@@ -35,7 +35,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/upload",
+        "http://claimsense-ai-production-8a50.up.railway.app/upload",
         formData,
       );
 
@@ -57,9 +57,12 @@ function App() {
     if (!question) return;
 
     try {
-      const response = await axios.post("http://127.0.0.1:8000/ask", {
-        question,
-      });
+      const response = await axios.post(
+        "http://claimsense-ai-production-8a50.up.railway.app/ask",
+        {
+          question,
+        },
+      );
 
       setAnswer(response.data.answer);
     } catch (err) {

@@ -6,7 +6,12 @@ from pdf2image import convert_from_path
 
 reader = easyocr.Reader(["en"], gpu=False)
 
-POPPLER_PATH = r"C:\poppler-26.02.0\Library\bin"
+# Windows uses a local Poppler installation.
+# Linux (Railway) uses the system-installed Poppler.
+if os.name == "nt":
+    POPPLER_PATH = r"C:\poppler-26.02.0\Library\bin"
+else:
+    POPPLER_PATH = None
 
 
 def extract_text_from_pdf(pdf_path):
@@ -24,10 +29,13 @@ def extract_text_from_pdf(pdf_path):
 def extract_text_using_ocr(pdf_path):
     text = ""
 
-    images = convert_from_path(
-        pdf_path,
-        poppler_path=POPPLER_PATH
-    )
+    if POPPLER_PATH:
+        images = convert_from_path(
+            pdf_path,
+            poppler_path=POPPLER_PATH
+        )
+    else:
+        images = convert_from_path(pdf_path)
 
     for image in images:
         image = np.array(image)
@@ -38,7 +46,6 @@ def extract_text_using_ocr(pdf_path):
 
 
 def extract_text_from_image(image_path):
-    image = np.array(image_path)
     result = reader.readtext(image_path, detail=0)
     return " ".join(result)
 

@@ -35,7 +35,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "https://claimsense-ai-production-3240.up.railway.app/upload",
+        "https://claimsense-ai-production-4698.up.railway.app/upload",
         formData,
       );
 
@@ -58,7 +58,7 @@ function App() {
 
     try {
       const response = await axios.post(
-        "https://claimsense-ai-production-3240.up.railway.app/ask",
+        "https://claimsense-ai-production-4698.up.railway.app/ask",
         {
           question,
         },

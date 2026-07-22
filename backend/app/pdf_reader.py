@@ -4,10 +4,18 @@ import pdfplumber
 import easyocr
 from pdf2image import convert_from_path
 
-reader = easyocr.Reader(["en"], gpu=False)
+reader = None
 
-# Windows uses a local Poppler installation.
-# Linux (Railway) uses the system-installed Poppler.
+
+def get_reader():
+    global reader
+
+    if reader is None:
+        print("Loading EasyOCR model...")
+        reader = easyocr.Reader(["en"], gpu=False)
+
+    return reader
+
 if os.name == "nt":
     POPPLER_PATH = r"C:\poppler-26.02.0\Library\bin"
 else:
@@ -37,16 +45,19 @@ def extract_text_using_ocr(pdf_path):
     else:
         images = convert_from_path(pdf_path)
 
+    ocr_reader = get_reader()
+
     for image in images:
         image = np.array(image)
-        result = reader.readtext(image, detail=0)
+        result = ocr_reader.readtext(image, detail=0)
         text += " ".join(result) + "\n"
 
     return text.strip()
 
 
 def extract_text_from_image(image_path):
-    result = reader.readtext(image_path, detail=0)
+    ocr_reader = get_reader()
+    result = ocr_reader.readtext(image_path, detail=0)
     return " ".join(result)
 
 

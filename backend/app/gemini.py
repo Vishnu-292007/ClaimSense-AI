@@ -3,9 +3,19 @@ import os
 
 print("Loaded gemini.py")
 
-client = genai.Client(
-    api_key=os.getenv("GOOGLE_API_KEY")
-)
+client = None
+
+
+def get_client():
+    global client
+
+    if client is None:
+        client = genai.Client(
+            api_key=os.getenv("GOOGLE_API_KEY")
+        )
+
+    return client
+
 
 def ask_gemini(context, question):
 
@@ -23,7 +33,7 @@ Answer:
 
     print("Using model: gemini-3.5-flash")
 
-    response = client.models.generate_content(
+    response = get_client().models.generate_content(
         model="gemini-3.5-flash",
         contents=prompt
     )
